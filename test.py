@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import smtplib
 import socket
 from email.message import EmailMessage
@@ -21,6 +21,3 @@ with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
     smtp.send_message(msg)
 
 print('Process Complete')
-=======
-
->>>>>>> c3471e5abf165d5268f92eeb546be46cc25d4eca
