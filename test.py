@@ -1,4 +1,3 @@
-
 import smtplib
 import socket
 from email.message import EmailMessage
