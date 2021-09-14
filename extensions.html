@@ -1,166 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stark Client</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-  <body>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            background: #202731;
+            overflow-x: hidden;
+        }
 
-    <!-- Navbar Section -->
-    <nav class="navbar">
-      <div class="navbar__container">
-        <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>StarkTech</a>
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span> <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="/" class="navbar__links">Home</a> <!-- Change "/" to HTML path and Home name -->
-          </li>
-          <li class="navbar__item">
-            <a href="/tech.html" class="navbar__links">Tech</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/extensions.html" class="navbar__links">Extensions</a>
-          </li>
-          <li class="navbar__btn"><a href="/" class="button">Sign Up</a></li>
-        </ul>
-      </div>
-    </nav>
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding: 100px 20vw;
+        }
 
-    <!-- Embbed Extensions -->
-    <div class="main">
-      <div class="main__container">
-        <div class="main__content">
-          <h1>Technology</h1>
-          <p>Check out our tech</p>
-          <button class="main__btn"><a href="#">Get Started</a></button>
-        </div>
-        <div class="main__img-container">
-          <img id="main__img" src="images/pic2.jpg" />
-        </div>
-      </div>
-    </div>
-    <div class="main">
-      <div class="main__container">
-        <iframe 
-        src="https://open.spotify.com/embed/playlist/2kA1Z0A6rLQRtidgTwop4I" 
-        width="80%" 
-        height="380" 
-        frameBorder="0" 
-        allowtransparency="true" 
-        allow="encrypted-media">
-        </iframe>
-      </div>
-      <div class="main__container">
-        <iframe 
-        width="560" 
-        height="315" 
-        src="https://www.youtube.com/embed/bbNLPAM8Hfo" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-        </iframe>
-      </div>
-    </div>
+        .blue {
+            background: #3c31dd;
+        }
 
-    <!-- Footer Section -->
-    <div class="footer__container">
-      <div class="footer__links">
-        <div class="footer__link--wrapper">
-          <div class="footer__link--items">
-            <h2>About Us</h2>
-            <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
-            <a href="/">Careers</a> <a href="/">Investments</a>
-            <a href="/">Terms of Service</a>
-          </div>
-          <div class="footer__link--items">
-            <h2>Contact Us</h2>
-            <a href="/">Contact</a> <a href="/">Support</a>
-            <a href="/">Destinations</a> <a href="/">Sponsorships</a>
-          </div>
-        </div>
-        <div class="footer__link--wrapper">
-          <div class="footer__link--items">
-            <h2>Videos</h2>
-            <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
-            <a href="/">Agency</a> <a href="/">Influencer</a>
-          </div>
-          <div class="footer__link--items">
-            <h2>Social Media</h2>
-            <a href="/">Instagram</a> <a href="/">Facebook</a>
-            <a href="/">Youtube</a> <a href="/">Twitter</a>
-          </div>
-        </div>
-      </div>
-      <section class="social__media">
-        <div class="social__media--wrap">
-          <div class="footer__logo">
-            <a href="/" id="footer__logo"><i class="fas fa-gem"></i>StarkTech</a>
-          </div>
-          <p class="website__rights">© StarkTech 2021. All rights reserved</p>
-          <div class="social__icons">
-            <a
-              class="social__icon--link"
-              href="/"
-              target="_blank"
-              aria-label="Facebook"
-            >
-              <i class="fab fa-facebook"></i>
-            </a>
-            <a
-              class="social__icon--link"
-              href="/"
-              target="_blank"
-              aria-label="Instagram"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a
-              class="social__icon--link"
-              href="//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber"
-              target="_blank"
-              aria-label="Youtube"
-            >
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a
-              class="social__icon--link"
-              href="/"
-              target="_blank"
-              aria-label="Twitter"
-            >
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a
-              class="social__icon--link"
-              href="/"
-              target="_blank"
-              aria-label="LinkedIn"
-            >
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
+        .red {
+            background: #dd3f31;
+        }
+
+        .pink {
+            background: #ff0066;
+        }
+
+        .dark {
+            background: #0f0f10;
+        }
+
+        .curve {
+            position: absolute;
+            height: 225px;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .curve::before {
+            content: '';
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            background-color: #202731;
+            transform: translate(85%, 60%);
+        }
+
+        .curve::after {
+            content: '';
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            background-color: #3c31dd;
+            transform: translate(-4%, 40%);
+            z-index: -1;
+        }
+
+        .wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .wave svg {
+            position: relative;
+            display: block;
+            width: calc(113% + 1.3px);
+            height: 110px;
+        }
+
+        .wave .shape-fill {
+            fill: #202731;
+        }
+
+        .spacer {
+            aspect-ratio: 900/300;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
     
-    <script src="app.js"></script>
-  </body>
+            }
+
+            .layer1 {
+                background-image: url('./layer1.svg');
+            }
+
+    </style>
+
+
+</head>
+
+<body>
+    
+    <section class='blue'>
+        <hi>Nice Curves</hi>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus necessitatibus dolore architecto soluta cumque vitae? Facere voluptates, amet dolores ad ut quas autem tenetur atque similique perferendis, asperiores perspiciatis incidunt!</p>
+        <div class='curve'></div>
+    </section>
+
+    <section>
+        <hi>Nice Curves</hi>
+        <p>Incidunt nemo qui animi facilis quos ad soluta similique nihil vel ab officiis nesciunt eum odio dolor, porro ipsum rerum recusandae aliquid veniam iure, ipsa eius. Debitis dicta culpa deleniti.</p>
+    </section> 
+
+    <section class='red'>
+        <hi>Nice Curves</hi>
+        <p>Quam repudiandae dolor laudantium aperiam dolore alias obcaecati sed totam ut ab vero, sapiente cumque architecto blanditiis! Blanditiis voluptas corrupti repudiandae pariatur ducimus culpa deserunt commodi, eum placeat quos maiores!</p>
+        
+        <!-- https://www.shapedivider.app/ -->
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    
+    </section>
+
+    <!-- https://app.haikei.app/ -->
+    <div class="spacer layer1"></div>
+
+    <section>
+        <hi>Nice Curves</hi>
+        <p>Est voluptate illum beatae exercitationem, possimus voluptatum nihil impedit ea commodi maiores sunt id? Sed impedit aliquam inventore. Perspiciatis hic in, culpa rem totam sed qui expedita minima tempora eveniet!</p>
+    </section>
+
+    <div class="spacer layer1"></div>
+
+    <section>
+        <hi>Nice Curves</hi>
+        <p>Eaque delectus laborum ullam cum illum quas dignissimos. Magni quibusdam, libero accusantium eligendi culpa quos minus dicta et. Doloribus ullam rem eligendi! Officiis totam nisi et, deserunt dicta nam consequuntur.</p>
+    </section>
+
+    <section>
+        <hi>Nice Curves</hi>
+        <p>Sunt quidem voluptates incidunt, eum accusantium numquam non eaque, ad possimus perferendis aliquid illum provident in voluptatibus doloribus sint, esse quae obcaecati voluptatem ducimus harum temporibus vitae nostrum excepturi! At.</p>
+    </section>
+
+    <section>
+        <hi>Nice Curves</hi>
+        <p>Incidunt nemo qui animi facilis quos ad soluta similique nihil vel ab officiis nesciunt eum odio dolor, porro ipsum rerum recusandae aliquid veniam iure, ipsa eius. Debitis dicta culpa deleniti.</p>
+    </section> 
+
+</body>
+
 </html>
