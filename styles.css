@@ -199,6 +199,10 @@
   }
   
   /* Main Content CSS */
+  .hero_img {
+    background-image: url('images/hero_main.jpg');
+  }
+
   .main {
     background-color: #141414;
   }
