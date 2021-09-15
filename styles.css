@@ -199,9 +199,6 @@
   }
   
   /* Main Content CSS */
-  .hero_img {
-    background-image: url('images/hero_main.jpg');
-  }
 
   .main {
     background-color: #141414;
@@ -214,10 +211,11 @@
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #131313;
+    /* background-color: #131313; */
+    background-image: url("./images/dark.jpg");
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
+    /* max-width: 1300px; */
     padding-right: 50px;
     padding-left: 50px;
   }
